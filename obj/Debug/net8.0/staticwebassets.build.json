@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "yCDUzMaWVOnUU025qC15AJJYRg3cpM4Oy9MaM3qtB5E=",
+  "Source": "SplWhisperer.Api",
+  "BasePath": "_content/SplWhisperer.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

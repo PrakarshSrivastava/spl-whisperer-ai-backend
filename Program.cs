@@ -1,4 +1,5 @@
 using SplWhisperer.Api.Services;
+using SplWhisperer.Api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,30 +7,38 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ISplLlmClient, DemoSplLlmClient>();
 builder.Services.AddScoped<ISplWhispererService, SplWhispererService>();
 builder.Services.AddScoped<ISplGuardrailService, SplGuardrailService>();
-
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
-// Request DTO
-public record SplWhispererRequest(string Question);
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-// Response DTO
-public record SplWhispererResponse(
-    string Spl,
-    string[] Explanation,
-    string[] Optimizations,
-    string[] Guardrails
-);
+
 
 // POST /api/spl-whisperer
-app.MapPost("/api/spl-whisperer", async (SplWhispererRequest request, ISplWhispererService service, CancellationToken ct) =>
+app.MapPost("/api/spl-whisperer", async (
+    SplWhispererRequest request,
+    ISplWhispererService service,
+    ISplGuardrailService guardrails,
+    CancellationToken ct) =>
 {
     var result = await service.GetSplAsync(request.Question, ct);
+    var validation = guardrails.Validate(result.Spl);
+
+    // Combine any model-provided guardrails with guardrail service messages.
+    var combinedGuardrails = result.Guardrails
+        .Concat(validation.Messages)
+        .ToArray();
 
     var response = new SplWhispererResponse(
         result.Spl,
         result.Explanation.ToArray(),
         result.Optimizations.ToArray(),
-        result.Guardrails.ToArray()
+        combinedGuardrails
     );
 
     return Results.Ok(response);
