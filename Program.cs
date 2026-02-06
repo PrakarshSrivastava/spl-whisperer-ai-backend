@@ -4,7 +4,7 @@ using SplWhisperer.Api.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Register services
-builder.Services.AddScoped<ISplLlmClient, DemoSplLlmClient>();
+builder.Services.AddScoped<ISplLlmClient, OpenAiSplLlmClient>();
 builder.Services.AddScoped<ISplWhispererService, SplWhispererService>();
 builder.Services.AddScoped<ISplGuardrailService, SplGuardrailService>();
 builder.Services.AddEndpointsApiExplorer();

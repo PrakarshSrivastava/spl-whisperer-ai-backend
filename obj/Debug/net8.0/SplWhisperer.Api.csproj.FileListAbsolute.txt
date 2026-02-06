@@ -1,9 +1,3 @@
-C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.AssemblyInfoInputs.cache
-C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.AssemblyInfo.cs
-C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.csproj.CoreCompileInputs.cache
-C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.sourcelink.json
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\appsettings.json
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\SplWhisperer.Api.staticwebassets.endpoints.json
@@ -13,11 +7,20 @@ C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\SplWhisperer.Api.runtimeconfig.json
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\SplWhisperer.Api.dll
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\SplWhisperer.Api.pdb
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\OpenAI.dll
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\System.ClientModel.dll
+C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\System.Memory.Data.dll
 C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.csproj.AssemblyReference.cache
+C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.AssemblyInfoInputs.cache
+C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.AssemblyInfo.cs
+C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.csproj.CoreCompileInputs.cache
 C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.sourcelink.json
 C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\scopedcss\bundle\SplWhisperer.Api.styles.css
 C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\staticwebassets.development.json
@@ -34,3 +37,6 @@ C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\refint\SplWhisperer.Api.dll
 C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.pdb
 C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\SplWhisperer.Api.genruntimeconfig.cache
 C:\SPL\SplWhisperer.Api\obj\Debug\net8.0\ref\SplWhisperer.Api.dll
+C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\Azure.AI.OpenAI.dll
+C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\Azure.Core.dll
+C:\SPL\SplWhisperer.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
